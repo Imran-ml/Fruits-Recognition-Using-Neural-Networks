@@ -47,8 +47,10 @@ We are using python language in the implementations and Jupyter Notebook that su
 <img src="https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif">
 
 <h4> Step 5</h4>
-- Droupout layer drop some neurons from previous layers. why we apply this? We apply this to avoid the overfitting problems. In overfitting, model give good accuracy on training time but not good on testing time.
-<img src="https://drek4537l1klr.cloudfront.net/elgendy/v-3/Figures/Img_01-04A_171.gif">
+- Activation function is node that is put at the end of all layers of neural network model or in between neural network layers. Activation function help to decide which neuron should be pass and which neuron should fire. So activation function of node defines the output of that node given an input or set of inputs. 
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*mcJfRvd9zarAbkHppFRrCQ.gif">
+<h4> Ref: https://miro.medium.com/v2/resize:fit:1400/1*mcJfRvd9zarAbkHppFRrCQ.gif </h4>
 
 <h4> Step 6</h4>
 - Flatten layer convert the 2D array into 1D array of all features.
