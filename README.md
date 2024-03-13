@@ -36,25 +36,29 @@ We are using python language in the implementations and Jupyter Notebook that su
 <h4> Step 2</h4>
 - Conv2D is 2D convolutional layer(where filters are applied to original image with specific features map to reduce the number of features), Conv2D layer create the convolution kernel(fixed size of boxes to apply on the image like below in the example gif) that take input of 16 filters which help to produce a tensor of outputs. We are giving input of the image with size of 100 width and 100 height and 3 is the channel for RGB.
 <img src="https://miro.medium.com/max/1320/1*DTTpGlhwkctlv9CYannVsw.gif">
+<h4> Ref: https://miro.medium.com/max/1320/1*DTTpGlhwkctlv9CYannVsw.gif </h4>
 
 
 <h4> Step 3</h4>
-- Activation function is node that is put at the end of all layers of neural network model or in between neural network layers. Activation function help to decide which neuron should be pass and which neuron should fire. So activation function of node defines the output of that node given an input or set of inputs. 
-<img src="https://missinglink.ai/wp-content/uploads/2018/11/activationfunction-1.png">
-
-<h4> Step 4</h4>
-- Maxpooling is a pooling operation that calculates maximum value in each patch of each feature map. It takes the value from input vectors and prepare the vector for the next layers.
-<img src="https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif">
-
-<h4> Step 5</h4>
 - Activation function is node that is put at the end of all layers of neural network model or in between neural network layers. Activation function help to decide which neuron should be pass and which neuron should fire. So activation function of node defines the output of that node given an input or set of inputs. 
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*mcJfRvd9zarAbkHppFRrCQ.gif">
 <h4> Ref: https://miro.medium.com/v2/resize:fit:1400/1*mcJfRvd9zarAbkHppFRrCQ.gif </h4>
 
+<h4> Step 4</h4>
+- Maxpooling is a pooling operation that calculates maximum value in each patch of each feature map. It takes the value from input vectors and prepare the vector for the next layers.
+<img src="https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif">
+<h4> Ref: https://developers.google.com/machine-learning/practica/image-classification/images/maxpool_animation.gif </h4>
+
+<h4> Step 5</h4>
+- Droupout layer drop some neurons from previous layers. why we apply this? We apply this to avoid the overfitting problems. In overfitting, model give good accuracy on training time but not good on testing time.
+<img src="https://drek4537l1klr.cloudfront.net/elgendy/v-3/Figures/Img_01-04A_171.gif">
+<h4> Ref: https://drek4537l1klr.cloudfront.net/elgendy/v-3/Figures/Img_01-04A_171.gif </h4>
+
 <h4> Step 6</h4>
 - Flatten layer convert the 2D array into 1D array of all features.
 <img src="https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/73_blog_image_1.png">
+<h4> Ref: https://sds-platform-private.s3-us-east-2.amazonaws.com/uploads/73_blog_image_1.png </h4>
 
 <h4> Step 7</h4>
 - Dense layer reduce the outputs by getting inputs from Faltten layer. Dense layer use all the inputs of previous layer neurons and perform calculations and send 150 outputs
@@ -94,7 +98,7 @@ To use this project, clone the repository and set up the environment as follows:
 
 1. **Clone the Repository**:
     ```bash
-    https://github.com/Imran-ml/EDA-Twitter-Sentiment-Analysis-Using-NN.git
+    https://github.com/Imran-ml/Fruits-Recognition-Using-NN.git
     ```
 2. **Setup the Environment**:
     - Navigate to the project directory and activate the virtual environment.
@@ -102,8 +106,8 @@ To use this project, clone the repository and set up the environment as follows:
 
 ## Resources
 
-- **Kaggle Notebook**: [View Notebook](https://www.kaggle.com/code/muhammadimran112233/eda-twitter-sentiment-analysis-using-nn)
-- **Dataset**: [View Dataset](https://www.kaggle.com/datasets/kazanova/sentiment140)
+- **Kaggle Notebook**: [View Notebook](https://www.kaggle.com/code/muhammadimran112233/99-acc-fruits-recognition-using-nn)
+- **Dataset**: [View Dataset](https://www.kaggle.com/datasets/moltean/fruits)
 
 ## License
 
@@ -111,12 +115,12 @@ This project is made available under the MIT License.
 
 ## Conclusion
 
-We used the twitter sentiment analysis dataset and explored the data with different ways:
-        <li>We prepared the text data of tweets by removing the unnecessary things.</li>
+We used the fruits360 dataset and explored the data with different ways:
+        <li>We prepared the the images data and extract the features.</li>
         <li>We trained model based on tensorflow with all settings. </li>
-        <li>We evaluated thye model with different evaluation measures.</li>
-        <li>If you are interested to work on any text based project, you can simply apply the same methodolgy but might be you will need to change little settings like name                 of coloumns etc.</li>
-        <li>We worked on the classification problem and sepcifically we call it binary classification which is two class classification.</li>
+        <li>We evaluated thye model with accuracy and look at the performance of the model with plots.</li>
+        <li>If you are interested to work on any image based project, prepare the data as we prepared in this project and there could be some changes in the code like                   number of classes or loss function.</li>
+        <li>We worked on the classification problem and sepcifically we call it multi class classification because we are using in total 81 classes of fruits.</li>
 
 ## About Author
 
@@ -127,4 +131,4 @@ We used the twitter sentiment analysis dataset and explored the data with differ
     - LinkedIn: [Profile](linkedin.com/in/muhammad-imran-zaman)
     - Google Scholar: [Profile](https://scholar.google.com/citations?user=ulVFpy8AAAAJ&hl=en)
     - YouTube: [Channel](https://www.youtube.com/@consolioo)
-- **Project Repository**: [GitHub Repo](https://github.com/Imran-ml/EDA-Twitter-Sentiment-Analysis-Using-NN.git)
+- **Project Repository**: [GitHub Repo](https://github.com/Imran-ml/Fruits-Recognition-Using-NN.git)
